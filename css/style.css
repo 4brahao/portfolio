@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Alterado para branco */
+    background-color: #000; /* Alterado para preto */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #111; /* Escurecido o fundo do header */
+}
+
+header .logo img {
+    height: 180px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Alterado para branco */
+}
+
+main {
+    padding: 10px;
+}
+
+.welcome {
+    text-align: center;
+    background-color: #333; /* Escurecido o fundo */
+    padding: 20px;
+    background-image: url('backgorund.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.balloon {
+    display: inline-block;
+    padding: 20px;
+    background: #222; /* Escurecido o fundo do balloon */
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Alterado para sombra clara */
+}
+
+.balloon::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #222; /* Alterado para combinar com o fundo */
+}
+
+.balloon::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #222; /* Alterado para combinar com o fundo */
+}
+
+.welcome .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #fff; /* Alterado para branco */
+    color: #000; /* Alterado para preto */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.welcome::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #333; /* Alterado para combinar com o fundo */
+}
+
+.welcome h1, .welcome p {
+    position: relative;
+    z-index: 1;
+}
+
+.welcome img {
+    border-radius: 50%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #fff; /* Alterado para branco */
+    color: #000; /* Alterado para preto */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    background: #111; /* Escurecido o fundo */
+    padding: 10px 5px;
+    text-align: center;
+}
+
+footer .footer-content img {
+    height: 200px; 
+    margin-bottom: -50px; 
+}
+
+footer .social-links img {
+    width: 24px;
+    margin: 0 5px;
+}
+
+.contact {
+    padding: 20px;
+    text-align: center;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #fff; /* Alterado para branco */
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #fff; /* Alterado para branco */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; 
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+}
+
+.about {
+    text-align: center; 
+    padding: 20px;
+    position: relative; 
+    background-image: url('../Imagens/background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about img {
+    display: block; 
+    margin: 0 auto 20px auto; /* Adiciona espaçamento abaixo da imagem */
+    width: 300px; 
+    height: auto; 
+    border-radius: 10px; 
+    position: relative; 
+    z-index: 1; 
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+.balloon-title, .balloon-content {
+    width: 100%; /* Garante que os balloons ocupem toda a largura disponível */
+    max-width: 500px; /* Limita a largura máxima dos balloons */
+}
+
+.balloon-title {
+    display: inline-block;
+    padding: 5px 0px;
+    background: #222; /* Escurecido o fundo do balloon-title */
+    border-radius: 15px;
+    position: relative;
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Alterado para sombra clara */
+}
+
+.balloon-title::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #222; /* Alterado para combinar com o fundo */
+}
+
+.balloon-title::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #222; /* Alterado para combinar com o fundo */
+}
+
+.about-title, .skills-title {
+    position: relative;
+    z-index: 1;
+    margin: 0; 
+}
+
+.balloon-content {
+    display: inline-block;
+    padding: 5px;
+    background: #222; /* Escurecido o fundo do balloon-content */
+    border-radius: 15px;
+    position: relative;
+    margin-bottom: 20px; 
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Alterado para sombra clara */
+}
+
+.balloon-content::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #222; /* Alterado para combinar com o fundo */
+}
+
+.balloon-content::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #222; /* Alterado para combinar com o fundo */
+}
+
+.portfolio {
+    padding: 300px 0; /* Mais espaço ao redor da seção de portfólio */
+    background-color: #000; /* Alterado para preto */
+    border-top: 5px solid #fff; /* Linha superior branca */
+}
+
+.project-grid {
+    gap: 1000px; /* Espaçamento entre os projetos */
+}
+
+.project-item {
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Sombra suave em branco */
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave ao passar o mouse */
+    max-width: 1800px; /* Corrigido de 1700x para 1700px */
+    width: 1000%;
+    text-align: center;
+}
+
+.project-item img {
+    border-bottom: 3px solid #fff; /* Borda branca na parte inferior da imagem */
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+}
